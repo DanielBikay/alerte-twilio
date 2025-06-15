@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say voice="alice" language="fr-FR">
+    Alerte ! Le taux d’humidité dans la serre est critique. Veuillez intervenir immédiatement.
+  </Say>
+</Response>
