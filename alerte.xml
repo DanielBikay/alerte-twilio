@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-  <Say voice="alice" language="fr-FR">
-    Alerte ! Le taux d’humidité dans la serre est critique. Veuillez intervenir immédiatement.
-  </Say>
+    <!-- Message principal -->
+    <Say voice="woman" language="fr-FR">
+        [Bip d'alerte] Attention ! L'humidité dans votre serre est tombée sous le seuil critique. 
+        Intervention immédiate requise. Répétition : 
+        L'humidité est dangereusement basse. Veuillez vérifier la serre dès que possible.
+    </Say>
+    
+    <!-- Pause de 2 secondes -->
+    <Pause length="2"/>
+    
+    <!-- Message raccourci pour boucle -->
+    <Say voice="woman" language="fr-FR" loop="2">
+        Alerte humidité. Action nécessaire.
+    </Say>
+    
+    <!-- Fin d'appel sans attente de touche -->
+    <Hangup/>
 </Response>
